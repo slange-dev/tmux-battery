@@ -30,7 +30,7 @@ If format strings are added to `status-right`, they should now be visible.
 Clone the repo:
 
 ```shell
-git clone https://github.com/tmux-plugins/tmux-battery ~/clone/path
+git clone https://github.com/slange-dev/tmux-battery ~/clone/path
 ```
 
 Add this line to the bottom of `.tmux.conf`:
