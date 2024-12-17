@@ -75,7 +75,7 @@ get_color_charge_settings() {
 	color_charge_secondary_tier3=$(get_tmux_option "@batt_color_charge_secondary_tier3" "$color_charge_secondary_tier3_default")
 	color_charge_secondary_tier2=$(get_tmux_option "@batt_color_charge_secondary_tier2" "$color_charge_secondary_tier2_default")
 	color_charge_secondary_tier1=$(get_tmux_option "@batt_color_charge_secondary_tier1" "$color_charge_secondary_tier1_default")
- 	color_charge_secondary_tier0=$(get_tmux_option "@batt_color_charge_secondary_tier0" "$color_charge_secondary_tier1_defaul0")
+ 	color_charge_secondary_tier0=$(get_tmux_option "@batt_color_charge_secondary_tier0" "$color_charge_secondary_tier0_default")
 }
 
 print_color_charge() {
