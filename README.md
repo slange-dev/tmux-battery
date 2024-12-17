@@ -18,7 +18,7 @@ In a normal situation, one of the above should be installed on your system by de
 Add plugin to the list of TPM plugins in `.tmux.conf`:
 
 ```tmux
-set -g @plugin 'tmux-plugins/tmux-battery'
+set -g @plugin 'slange-dev/tmux-battery'
 ```
 
 Hit `<prefix> + I` to fetch the plugin and source it.
