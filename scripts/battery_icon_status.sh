@@ -15,7 +15,7 @@ icon_status_unknown=''
 icon_status_charged_default='󰂄'
 icon_status_charged_default_osx='🔌'
 icon_status_charging_default='󰂄'
-icon_status_discharging_default='🔋'
+icon_status_discharging_default='󱟢'
 icon_status_attached_default='⚠️'
 icon_status_unknown_default='?'
 
