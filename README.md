@@ -3,6 +3,8 @@
 Enables displaying battery percentage and status icon in tmux status-right.
 
 ## Installation
+For icons:
+- [NerdFonts](https://www.nerdfonts.com/)
 
 In order to read the battery status, this plugin depends on having one of the following applications installed:
 - pmset (MacOS only)
