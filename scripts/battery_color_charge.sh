@@ -90,7 +90,7 @@ print_color_charge() {
 	# if percentage is empty, assume it's a desktop
  	if [ -o "$percentage" == "" ]; then
 		printf ""
-	elif [ $percentage -ge 95 ]; then  
+	elif [ $percentage -gt 98 ]; then  
 		printf "#[$primary_plane=$color_charge_primary_tier10${color_charge_secondary_tier10:+",$secondary_plane=$color_charge_secondary_tier10"}]"
 	elif [ $percentage -ge 90 ]; then
 		printf "#[$primary_plane=$color_charge_primary_tier9${color_charge_secondary_tier9:+",$secondary_plane=$color_charge_secondary_tier9"}]"  
