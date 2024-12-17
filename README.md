@@ -139,10 +139,10 @@ Level of Charge Icons:
 
 Status Icons:
 
- - charged (`@batt_icon_status_charged`): '🔌'
+ - charged (`@batt_icon_status_charged`): '󰂄'
  - charged - OS X (`@batt_icon_status_charged`): '🔌'
- - charging (`@batt_icon_status_charging`): '🔌'
- - discharging (`@batt_icon_status_discharging`): '🔋'
+ - charging (`@batt_icon_status_charging`): '󰂄'
+ - discharging (`@batt_icon_status_discharging`): '󱟢'
  - attached (`@batt_icon_status_attached`): '⚠️'
  - unknown (`@batt_icon_status_unknown`): '?'
 
