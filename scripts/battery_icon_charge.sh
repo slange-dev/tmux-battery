@@ -53,7 +53,7 @@ print_icon_charge() {
  	# if percentage is empty, assume it's a desktop
  	if [ -o "$percentage" == "" ]; then
   		printf "$icon_charge_default"
-	elif [ $percentage -gt 95 ]; then
+	elif [ $percentage -gt 98 ]; then
 		printf "$icon_charge_tier10"  
   	elif [ $percentage -ge 90 ]; then
 		printf "$icon_charge_tier9"
