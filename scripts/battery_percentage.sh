@@ -6,7 +6,9 @@ source "$CURRENT_DIR/helpers.sh"
 
 print_battery_percentage() {
 	# percentage displayed in the 2nd field of the 2nd row
-	if is_wsl; then
+	if command_exists "termux-battery-status" "jq"; then
+        termux-battery-status | jq -r .percentage
+	elif is_wsl; then
 		if [ -e /sys/class/power_supply/*/capacity ]; then
 			echo $(cat $(find /sys/class/power_supply/*/capacity | tail -n1))%
 		fi
