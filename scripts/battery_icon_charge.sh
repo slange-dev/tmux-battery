@@ -51,7 +51,7 @@ get_icon_charge_settings() {
 print_icon_charge() {
 	percentage=$($CURRENT_DIR/battery_percentage.sh | sed -e 's/%//')
  	# if percentage is empty, assume it's a desktop
- 	if [ -o "$percentage" == "" ]; then
+  	if [[-o "$percentage" == "" || -z "$percentage" ]]; then
   		printf "$icon_charge_default"
 	elif [ $percentage -gt 98 ]; then
 		printf "$icon_charge_tier10"  
