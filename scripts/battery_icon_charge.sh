@@ -45,22 +45,22 @@ get_icon_charge_settings() {
 	icon_charge_tier2=$(get_tmux_option "@batt_icon_charge_tier2" "$icon_charge_tier2_default")
 	icon_charge_tier1=$(get_tmux_option "@batt_icon_charge_tier1" "$icon_charge_tier1_default")
 	icon_charge_tier0=$(get_tmux_option "@batt_icon_charge_tier0" "$icon_charge_tier0_default")
-	icon_charge_default=$(get_tmux_option "@batt_icon_charge_default" "$icon_charge_default") 
+	icon_charge_default=$(get_tmux_option "@batt_icon_charge_default" "$icon_charge_default")
 }
 
 print_icon_charge() {
 	percentage=$($CURRENT_DIR/battery_percentage.sh | sed -e 's/%//')
  	# if percentage is empty, assume it's a desktop
-  	if [[-o "$percentage" == "" || -z "$percentage" ]]; then
+  	if [[ -o "$percentage" == "" || -z "$percentage" ]]; then
   		printf "$icon_charge_default"
 	elif [ $percentage -gt 98 ]; then
-		printf "$icon_charge_tier10"  
+		printf "$icon_charge_tier10"
   	elif [ $percentage -ge 90 ]; then
 		printf "$icon_charge_tier9"
 	elif [ $percentage -ge 80 ]; then
-		printf "$icon_charge_tier8"  
+		printf "$icon_charge_tier8"
 	elif [ $percentage -ge 70 ]; then
-		printf "$icon_charge_tier7"  
+		printf "$icon_charge_tier7"
 	elif [ $percentage -ge 60 ]; then
 		printf "$icon_charge_tier6"
 	elif [ $percentage -ge 50 ]; then
